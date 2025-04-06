@@ -1,0 +1,51 @@
+[
+	{
+		"id": 1,
+		"name": "Magazinew - Magazine Template",
+		"image": "/images/megazine1.png",
+		"type": "portfolio",
+		"preview_link": "../projects/magazinew/Magazinew.jsx"
+	},
+	{
+		"id": 2,
+		"name": "Magazinew",
+		"image": "/images/megazine1.png",
+		"type": "news",
+		"preview_link": "../projects/magazinew/Magazinew.jsx"
+	},
+	{
+		"id": 3,
+		"name": "Magazinew",
+		"image": "/images/megazine1.png",
+		"type": "news",
+		"preview_link": "../projects/magazinew/Magazinew.jsx"
+	},
+	{
+		"id": 4,
+		"name": "Magazinew",
+		"image": "/images/megazine1.png",
+		"type": "blog",
+		"preview_link": "../projects/magazinew/Magazinew.jsx"
+	},
+	{
+		"id": 5,
+		"name": "Magazinew",
+		"image": "/images/megazine1.png",
+		"type": "news",
+		"preview_link": "../projects/magazinew/Magazinew.jsx"
+	},
+	{
+		"id": 6,
+		"name": "Magazinew",
+		"image": "/images/megazine1.png",
+		"type": "blog",
+		"preview_link": "../projects/magazinew/Magazinew.jsx"
+	},
+	{
+		"id": 7,
+		"name": "Magazinew",
+		"image": "/images/megazine1.png",
+		"type": "portfolio",
+		"preview_link": "../projects/magazinew/Magazinew.jsx"
+	}
+]

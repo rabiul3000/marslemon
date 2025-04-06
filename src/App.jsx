@@ -4,9 +4,11 @@ import Home from './components/home/Home';
 import Auth from './components/auth/Auth';
 import About from './components/about/About';
 import NotFound from './components/notfound/NotFound';
-import './App.css';
 
-function App() {
+import './App.css';
+import Magazinew from './components/projects/magazinew/Magazinew';
+
+const App = () => {
 	return (
 		<Router>
 			<Routes>
@@ -14,10 +16,12 @@ function App() {
 				<Route path='/home' element={<Home />} />
 				<Route path='/about' element={<About />} />
 				<Route path='*' element={<NotFound />} />
+
+				<Route path='/preview/magazinew' element={<Magazinew />} />
 			</Routes>
 		</Router>
 	);
-}
+};
 
 export default App;
 

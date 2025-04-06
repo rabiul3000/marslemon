@@ -1,7 +1,9 @@
 import React from 'react';
+import { Link } from 'react-router';
 
 const TemplateCard = ({ template }) => {
 	const { name, image } = template;
+	let path = `../preview/${name.split(' ')[0].toLowerCase()}`;
 
 	return (
 		<div className='card bg-base-100 w-96 shadow-md'>
@@ -19,7 +21,9 @@ const TemplateCard = ({ template }) => {
 				</p>
 
 				<div className='card-actions justify-end'>
-					<button className='btn btn-xs'>Preview</button>
+					<Link className='btn btn-xs' to={path}>
+						Preview
+					</Link>
 					<button className='btn btn-xs btn-neutral'>Add To cart</button>
 				</div>
 			</div>
