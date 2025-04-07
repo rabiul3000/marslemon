@@ -2,37 +2,37 @@ import React from 'react';
 import Navbar from './Navbar';
 
 const Magazinew = () => {
+	const images = ['/images/c1.jpg', '/images/c2.jpg', '/images/c3.jpg'];
+
+	let increase = () => {
+		let count = 0;
+		setInterval(() => {
+			if (count === images.length) {
+				count = 0;
+			}
+			count++;
+			console.log(count);
+		}, 1000);
+		return count;
+	};
+
+	let ans = increase();
+	console.log(ans);
+
 	return (
 		<div className='megazinew mx-44 my-auto shadow-lg'>
 			<nav>
 				<Navbar />
 			</nav>
 			<main className='my-6 border flex'>
-				
-				<div className='leftContainer border border-red-500 flex-3/4 p-2'>
-					Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt
-					obcaecati, laborum unde illum tempora provident culpa ipsam labore
-					animi corrupti ex. Quis pariatur reiciendis quae vero, cupiditate
-					aspernatur qui hic aliquam in culpa nobis. Repudiandae quae
-					accusantium consequatur, rem nulla laborum eius aspernatur aut quaerat
-					corporis molestiae quo. Eos, optio amet quidem ullam delectus aliquid
-					officiis quis neque omnis iusto dolorum, minima eaque quisquam ipsam
-					explicabo ex porro eum voluptatum. Ea officia iusto nobis vitae
-					expedita voluptatem facilis voluptas laudantium quod iste consectetur
-					obcaecati dignissimos, temporibus quidem repellat! Sunt saepe culpa
-					eveniet hic quis expedita? Veritatis reiciendis eius quasi neque
-					possimus, itaque provident voluptatem ut nihil aliquid quia porro, eum
-					molestiae exercitationem quidem, nobis optio cum nostrum saepe
-					deleniti accusantium! Ex eveniet deleniti sapiente aliquid possimus
-					dicta illum sed, debitis hic quidem accusamus tempora placeat
-					molestias repellat itaque cum commodi quisquam ratione eius ullam
-					dolores alias quas unde! Ducimus non veritatis saepe ratione provident
-					iusto omnis tenetur, enim repudiandae mollitia blanditiis eveniet
-					facilis magni nesciunt in voluptate explicabo hic unde eaque alias,
-					aspernatur minus. Expedita possimus, temporibus quod atque alias quo
-					cumque, excepturi quidem aut sequi cum, consequatur ab. Eum unde
-					fugiat culpa obcaecati dolor voluptatum necessitatibus tenetur
-					eligendi ullam!
+				<div className='leftContainer border border-red-500 flex-3/4'>
+					<div className='imageContainer border w-full h-[400px]'>
+						<img
+							className='w-full h-full object-cover'
+							src={images[0]}
+							alt='headlines'
+						/>
+					</div>
 				</div>
 
 				<div className='rightContainer flex-1/4 p-2'>
@@ -61,7 +61,6 @@ const Magazinew = () => {
 					omnis nulla at incidunt minus quae a rerum architecto sed voluptatibus
 					debitis.
 				</div>
-				
 			</main>
 		</div>
 	);
